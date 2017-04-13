@@ -1,0 +1,65 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginStart="10dp"
+        android:background="@color/box_color"
+        android:orientation="horizontal"
+        android:layout_width="200dp"
+        android:layout_height="31dp">
+
+        <TextView
+            android:text="SELECT"
+            android:id="@+id/tv_contact"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:textStyle="italic|bold"
+            android:textColor="@color/colorAccent"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_gravity="end|center_vertical"
+            android:src="@drawable/ic_down_arrow"
+            android:layout_width="10dp"
+            android:layout_height="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginStart="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/checkboxStartStop"
+            android:layout_weight="1"
+            android:shadowColor="@color/colorAccent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/checkboxInterval"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/checkboxAccident"
+            android:layout_weight="1"
+            android:shadowColor="@color/colorAccent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>
